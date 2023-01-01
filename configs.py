@@ -16,14 +16,16 @@ class Config(object):
 #    OWNER_USERNAME = os.getenv("OWNER_USERNAME", "Beastonejnanesh")
     BACKUP_CHANNEL = os.getenv("BACKUP_CHANNEL", "ROCKERSBACKUP")
 #    GROUP_USERNAME = os.getenv("GROUP_USERNAME")
-    START_MSG = os.getenv("START_MSG", """**Hᴇʏ {}, 
+    START_MSG = os.getenv("START_MSG", """**𝐇𝐞𝐲 {}, 
 
-I ᴀᴍ Mᴏᴠɪᴇ Sᴇᴀʀᴄʜ Rᴏʙᴏᴛ 🔍.
+𝐈 𝐚𝐦 𝐚𝐮𝐭𝐨 𝐌𝐝𝐢𝐬𝐜 𝐥𝐢𝐧𝐤 𝐬𝐞𝐚𝐫𝐜𝐡 𝐛𝐨𝐭
 
-I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Eᴠᴇʀʏ Mᴏᴠɪᴇ Iɴ Mᴅɪsᴋ Lɪɴᴋ 🔗
+𝐉𝐮𝐬𝐭 𝐚𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐮 𝐫 𝐠𝐫𝐨𝐮𝐩
 
-Jᴜsᴛ Tʏᴘᴇ ᴀ Mᴏᴠɪᴇ Nᴀᴍᴇ 🎬**""" ) 
-    START_PHOTO = os.getenv("START_PHOTO", "https://telegra.ph/file/7d357b72c29a6aa21fb78.jpg")
+𝐔 𝐜𝐚𝐧 𝐚𝐥𝐬𝐨 𝐞𝐚𝐫𝐧 𝐦𝐨𝐧𝐞𝐲 💰 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐦𝐲 𝐛𝐨𝐭
+
+message here @Beastonejnanesh**""" ) 
+    START_PHOTO = os.getenv("START_PHOTO", "https://te.legra.ph/file/8dc3715008f6cf89930bc.jpg")
     HOME_TEXT = os.getenv("HOME_TEXT", """ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕
 
 ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇʀᴇ ʏᴏᴜʀ ʟɪɴᴋꜱ.
@@ -35,8 +37,8 @@ Jᴜsᴛ Tʏᴘᴇ ᴀ Mᴏᴠɪᴇ Nᴀᴍᴇ 🎬**""" )
     RESULTS_COUNT = int(os.getenv("RESULTS_COUNT", 20))
     BROADCAST_AS_COPY = os.getenv("BROADCAST_AS_COPY", "True")
     UPDATES_CHANNEL_USERNAME = os.getenv("UPDATES_CHANNEL_USERNAME", "ROCKERSBACKUP1")
-    FORCE_SUB = os.getenv("FORCE_SUB", "False")
-    AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 180))
+    FORCE_SUB = os.getenv("FORCE_SUB", "True")
+    AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", 60))
     MDISK_API = os.getenv("MDISK_API", "nx7N3INpOrexpfSHYnp7")
     VERIFIED_TIME  = int(os.getenv("VERIFIED_TIME", "31"))
     ABOUT_BOT_TEXT = os.getenv("ABOUT_TEXT", """I ᴏɴʟʏ ꜱʜᴀʀᴇ ᴛʜᴇ ᴘᴏꜱᴛ ꜰʀᴏᴍ ᴘᴇᴏᴘʟᴇ'ꜱ ᴄʜᴀɴɴᴇʟ! 
