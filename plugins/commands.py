@@ -37,22 +37,8 @@ async def mdisk_handler(_, event: Message):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
             ],
 
-             [InlineKeyboardButton("TeraBox", callback_data="Terabox_msg"),
-             InlineKeyboardButton('Watch Video', url='https://t.me/CyniteBackup/17')
-             ]
-        ])
-    )
-
-@Client.on_message(filters.command("Terabox") & filters.private)
-async def terabox_handler(_, event: Message):
-    await event.reply_text(Config.ABOUT_TERABOX_TEXT.format(event.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([
-            [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ],
-
-             [InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
-             InlineKeyboardButton('Watch Photo', url='https://telegra.ph/file/abdc2f0e2d59f6bb67fa5.jpg')
+             [InlineKeyboardButton("autofilterbot", callback_data="link-seacher"),
+             InlineKeyboardButton('Watch Video', url='https://t.me/rockersallmoviesearchbot')
              ]
         ])
     )
