@@ -47,7 +47,7 @@ message here @Beastonejnanesh**""" )
 
 𝐢 ɴᴏᴛ ꜱᴛᴏʀᴇ ᴀɴʏ ꜰɪʟᴇꜱ ᴏʀ ᴛᴇ𝐱ᴛ ɪɴ  ᴍʏ ᴅᴀᴛᴀʙᴀꜱᴇ.
 
-ᴅᴍ ꜰᴏʀ ᴀɴʏ 𝐐ᴜᴇʀʏ @Beastonejnanesh"" )
+ᴅᴍ ꜰᴏʀ ᴀɴʏ 𝐐ᴜᴇʀʏ @Beastonejnanesh """ )
     ABOUT_WATCH_TEXT = """
 ʜᴇʏ ʙᴜᴅᴅʏ, 
 
