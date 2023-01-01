@@ -37,7 +37,7 @@ async def dbgive_access_handler(c:Client,query: CallbackQuery):
             print(e)
 
         await query.edit_message_text("Database Channel Verified. Make sure you have joined the channel")
-        return await c.send_message(from_user, f"Your channel {db_channel} has been verified. @PostSearchBot will search posts from your Database channel in your group")
+        return await c.send_message(from_user, f"Your channel {db_channel} has been verified. @rockersallmoviesearchbot will search posts from your Database channel in your group")
     except Exception as e:
         print(e)
 
@@ -119,7 +119,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("How To Watch?", callback_data="Watch_msg"),
-                        InlineKeyboardButton('Support', url='http://t.me/messagecontactbot')
+                        InlineKeyboardButton('Support', url='http://t.me/Beastonejnanesh')
                     ]
                 ]
             ),
@@ -170,7 +170,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
-                        InlineKeyboardButton('Watch Photo', url='https://telegra.ph/file/abdc2f0e2d59f6bb67fa5.jpg')
+                        InlineKeyboardButton('Watch Photo', url='https://te.legra.ph/file/b898106c2dcef11b65de2.mp4')
                     ],[
                         InlineKeyboardButton("Back", callback_data="Watch_msg")
                 ]
@@ -189,7 +189,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("Terabox", callback_data="Terabox_msg"),
-                        InlineKeyboardButton('Watch Video', url='https://t.me/CyniteBackup/17')
+                        InlineKeyboardButton('Watch Video', url='https://t.me/ROCKERSBACKUP')
                     ],[
                         InlineKeyboardButton("Back", callback_data="Watch_msg")
                     ]
