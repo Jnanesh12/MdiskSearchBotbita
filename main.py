@@ -47,7 +47,7 @@ async def message_handler(event):
 
 **You Have To Join Our Update Channel To Use Me ✅**
 
-**Click Below Button To Join Now.👇🏻**''', buttons=Button.url('🍿Updates Channel🍿', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
+**Click Below Button To Join Now.👇🏻**''', buttons=Button.url('💎Updates Channel💎', f'https://t.me/{Config.UPDATES_CHANNEL_USERNAME}'))
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
             return await haha.delete()
 
@@ -60,7 +60,7 @@ async def message_handler(event):
         if not args:
             return
 
-        txt = await event.reply('**Printing Links For "{}" 🔍**'.format(event.text))
+        txt = await event.reply('**Rocking links For "{}" 🔍**'.format(event.text))
 
 
 
@@ -109,7 +109,7 @@ async def message_handler(event):
     '''
 
             newbutton = [Button.url('Help🙋',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+                                    f'https://t.me/+Rf7HPykmLC5hOWQ9=Watch')]
 
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
@@ -129,10 +129,10 @@ async def message_handler(event):
             title=event.text,
             author=Config.BOT_USERNAME
         )
-        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿🎬 {str(event.text).upper()}\n🍿🎬 {str("Click me for results").upper()}]({tgraph_result})'
+        message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿💎🎬 {str(event.text).upper()}\n🍿💎🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
         newbutton = [Button.url('How To Watch ❓',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+                                    f'https://t.me/+Rf7HPykmLC5hOWQ9=Watch')]
 
         await txt.delete()
         await asyncio.sleep(0.5)
