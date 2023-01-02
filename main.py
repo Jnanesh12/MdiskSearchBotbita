@@ -136,8 +136,8 @@ q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')]
         )
         message = f'**Click Here 👇 For "{event.text}"**\n\n[🍿💎🎬 {str(event.text).upper()}\n🍿💎🎬 {str("Click me for results").upper()}]({tgraph_result})'
 
-        newbutton = [Button.url('📡 𝐭𝐡𝐞𝐚𝐭𝐞𝐫 𝐩𝐫𝐢𝐧𝐭', 
-                                    f'https://t.me/+4FTdhkluUPs0Zjc1')]
+        newbutton = [Button.url('📡 𝙐𝙋𝘿𝘼𝙏𝙀𝙎 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', 
+                                    f'https://t.me/ROCKERSBACKUP1')]
 
         await txt.delete()
         await asyncio.sleep(0.5)
