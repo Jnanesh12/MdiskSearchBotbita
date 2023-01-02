@@ -60,7 +60,7 @@ async def message_handler(event):
         if not args:
             return
 
-        txt = await event.reply('**Rocking links For "{}" 🔍**'.format(event.text))
+        txt = await event.reply('**Rocking "{}" 🔍**'.format(event.text))
 
 
 
@@ -111,7 +111,9 @@ async def message_handler(event):
                                                                  
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
-            await asyncio.sleep(Config.AUTO_DELETE_TIME)
+            await asyncio.sleep(Config.AUTO_DELETE_TIME) 
+            await event.delete() 
+            return await result.delete()
         else:
             pass
 
