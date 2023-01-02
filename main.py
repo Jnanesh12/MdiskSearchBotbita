@@ -110,6 +110,7 @@ async def message_handler(event):
                                     f'https://t.me/ROCKERSBACKUP1')]
                                                                  
             await txt.delete()
+            await asyncio.sleep(0.5)
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
             await event.delete()
