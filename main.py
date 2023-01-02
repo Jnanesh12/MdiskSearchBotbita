@@ -102,15 +102,20 @@ async def message_handler(event):
             finalsearch.append(msg)
 
         if c <= 0:
-            answer = f'''** Results Found For {event.text}**
+            answer = f'''** Sorry {event.sender.first_name} No Results Found For {event.text}**
+**Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍
+**Click On The Help To Know How To Watch**
+    '''
+
+            newbutton = [Button.url('Help🙋',
+                                    f'https://t.me/postsearchbot?start=Watch')]
+
+          
+   
+ 
             
-**Type Only Movie Name 💬**
-**Check Spelling On** [Google](http://www.google.com/search?q=
-{event.text.replace(' ', '%20')}%20Movie) 🔍 
-   ''' 
-            
-            newbutton = [Button.url('Click To Check Spelling ✅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie')],              
-                        [Button.url('Click To Check Release Date 📅', f'http://www.google.com/search?q={event.text.replace(" ", "%20")}%20Movie%20Release%20Date')]
+                    
+                        
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
