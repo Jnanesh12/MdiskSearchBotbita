@@ -103,12 +103,11 @@ async def message_handler(event):
 
         if c <= 0:
             answer = f'''** Sorry {event.sender.first_name} No Results Found For {event.text}**
-**Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 🔍
-**Click On The Help To Know How To Watch**
+**Please check the spelling on** [Google](http://www.google.com/search?q={event.text.replace(' ', '%20')}%20Movie) 
     '''
 
-            newbutton = [Button.url('Help🙋',
-                                    f'https://t.me/postsearchbot?start=Watch')]
+            newbutton = [Button.url('📡 𝙐𝙋𝘿𝘼𝙏𝙀𝙎 𝘾𝙃𝘼𝙉𝙉𝙀𝙇',
+                                    f'https://t.me/ROCKERSBACKUP1')]
                                                                  
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
