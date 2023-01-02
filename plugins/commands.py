@@ -29,33 +29,6 @@ async def watch_handler(_, event: Message):
         ])
     ) 
 
-@Client.on_message(filters.command("Mdisk") & filters.private)
-async def mdisk_handler(_, event: Message):
-    await event.reply_text(Config.ABOUT_MDISK_TEXT.format(event.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([
-            [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ],
-
-             [InlineKeyboardButton("autofilterbot", callback_data="link-seacher"),
-             InlineKeyboardButton('Watch Video', url='https://te.legra.ph/file/b898106c2dcef11b65de2.mp4')
-             ]
-        ])
-    )
-
-@Client.on_message(filters.command("T") & filters.private)
-async def terabox_handler(_, event: Message):
-    await event.reply_text(Config.ABOUT_TERABOX_TEXT.format(event.from_user.mention),
-        reply_markup=InlineKeyboardMarkup([
-            [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ],
-             [InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
-             InlineKeyboardButton('Watch Photo', url='https://telegra.ph/file/abdc2f0e2d59f6bb67fa5.jpg')
-             ]
-        ])
-    )
-    
 @Client.on_message(filters.command('leave') & filters.private &  filters.chat(Config.BOT_OWNER))
 async def leave_a_chat(bot, message):
     if len(message.command) == 1:
