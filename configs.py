@@ -57,8 +57,6 @@ message here @Beastonejnanesh**""" )
 ᴛᴇʀᴀ ʙᴏx - ᴀɢᴀʀ ᴀᴘᴘᴋᴏ ɴᴀʜɪ ᴘᴀᴛᴀ ᴋɪ ᴛᴇʀᴀʙᴏx sᴇ ᴍᴏᴠɪᴇs ᴋᴀɪsᴇ ᴅᴇᴋʜᴇ ᴛᴏ ɴɪᴄʜᴇ ᴅɪʏᴇ ɢᴀʏᴇ ᴛᴇʀᴀ ʙᴏx ʙᴜᴛᴛᴏɴ ᴘᴀʀ ᴄʟɪᴄᴋ ᴋᴀʀᴇ
 
 ʀᴇɢᴀʀᴅs - @Beastonejnanesh"""
-    ABOUT_MDISK_TEXT = """
- how to open mdisk link https://t.me/+Rf7HPykmLC5hOWQ9"""
 
     ABOUT_HELP_TEXT = """
 
