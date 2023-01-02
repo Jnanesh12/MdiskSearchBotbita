@@ -119,7 +119,7 @@ async def button(bot, cmd: CallbackQuery):
             ], 
                                         [
                         InlineKeyboardButton("How To Watch?", callback_data="Watch_msg"),
-                        InlineKeyboardButton('Support', url='http://t.me/Beastonejnanesh')
+                        InlineKeyboardButton('Support', url='http://t.me/ROCKERSBACKUP')
                     ]
                 ]
             ),
@@ -141,62 +141,7 @@ async def button(bot, cmd: CallbackQuery):
                 ]
             ),
             parse_mode="html"
-        )
-        elif "Watch_msg" in cb_data:
-            await cmd.message.edit(
-            text=Config.ABOUT_WATCH_TEXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ], 
-                                        [
-                        InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
-                        InlineKeyboardButton("Tera Box", callback_data="Terabox_msg") 
-                 ]
-                    ]
-            ),
-            parse_mode="html"
-        )
-        elif "Terabox_msg" in cb_data:
-            await cmd.message.edit(
-            text=Config.ABOUT_TERABOX_TEXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ], 
-                                        [
-                        InlineKeyboardButton("Mdisk", callback_data="Mdisk_msg"),
-                        InlineKeyboardButton('Watch Photo', url='https://te.legra.ph/file/b898106c2dcef11b65de2.mp4')
-                    ],[
-                        InlineKeyboardButton("Back", callback_data="Watch_msg")
-                ]
-                    ]
-            ),
-            parse_mode="html"
-        )
-        elif "Mdisk_msg" in cb_data:
-            await cmd.message.edit(
-            text=Config.ABOUT_MDISK_TEXT,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{Config.BOT_USERNAME}?startgroup=true')
-            ], 
-                                        [
-                        InlineKeyboardButton("Terabox", callback_data="Terabox_msg"),
-                        InlineKeyboardButton('Watch Video', url='https://t.me/ROCKERSBACKUP')
-                    ],[
-                        InlineKeyboardButton("Back", callback_data="Watch_msg")
-                    ]
-                ]
-            ),
-            parse_mode="html"
-        )       
+        )            
         elif "remove_api" in cb_data:
             _, group_id = cb_data.split("#")
             await db.remove_user_api(int(group_id))
