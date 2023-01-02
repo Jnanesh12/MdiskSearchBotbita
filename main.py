@@ -109,13 +109,7 @@ async def message_handler(event):
 
             newbutton = [Button.url('Help🙋',
                                     f'https://t.me/postsearchbot?start=Watch')]
-
-          
-   
- 
-            
-                    
-                        
+                                                                 
             await txt.delete()
             result = await event.reply(answer, buttons=newbutton, link_preview=False)
             await asyncio.sleep(Config.AUTO_DELETE_TIME)
