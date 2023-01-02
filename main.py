@@ -110,8 +110,8 @@ async def message_handler(event):
    ''' 
             
             newbutton = [Button.url('Click To Check Spelling ✅', 
-                                    f'http://www.google.com/search?
-q={event.text.replace(" ", "%20")}%20Movie')], [ 
+                                    f'http://www.google.com/search?q=
+{event.text.replace(" ", "%20")}%20Movie')], [ 
                             Button.url('Click To Check Release Date 
 📅', 
                                     f'http://www.google.com/search?
